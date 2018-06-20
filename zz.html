@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>재쓰의 음악저장소</title>
+        <meta charset="UTF-8">
+        <meta name="만든이" content="우재영">
+        
+            <style type="text/css">
+            
+#container {
+	width: 10000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#content {
+	width: 500px;
+	padding: 10px;
+	margin-right: 160px;
+	margin-left: 160px;
+}
+#leftnav {
+	float: left;
+	width: 140px;
+	height: 400px;
+	background-color: #ffffff;
+	padding: 10px;
+		
+}
+
+#leftnav ul{
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	font-family: '돋움', Helvetica, sans-serif;
+	font-size: 30px;
+}
+
+#leftnav a{
+	display: block;
+	width: 130px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	border-bottom-width: 1px;
+}
+
+#leftnav a:link, .navlist a:visited{
+color: #2F77F1;
+text-decoration: underline;
+font-weight: bold;
+}
+
+#leftnav a:visited{
+   color: #ffffff;
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+#leftnav a:hover{
+	text-decoration: none;
+	color: #0000ff;
+}
+
+#sidebar {
+	padding: 10px;
+	float: right;
+	width: 130px;
+	background-color: #30D9F4;
+	height: 390px;
+
+}
+
+#footer {
+	background-color: #2F77F1;
+	padding: 10px;
+	clear: both;
+	font-family: '돋움', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background:url(/data/201010/IJ12878312905648/footer_bg.gif) repeat-x bottom;
+	margin: 0 auto -120px; 
+}
+.footer, .push {
+	height: 100px; 
+	text-align:center;
+}
+            ul {
+
+list-style: none;
+
+margin: 0;
+
+padding : 0;
+
+overflow: hidden;
+
+background-color: #333;
+
+}
+
+li {
+
+float : left;
+
+}
+
+li a {
+
+display: block;
+
+color:white;
+
+text-align: center;
+
+padding: 14px 16px;
+
+text-decoration: none;
+
+}
+
+a:hover:not(.active) {
+
+background-color:orangered;
+
+}
+
+.active {
+
+background-color : #4CAF50;
+
+}
+            p{
+                float:center;
+                font-size:30px;
+                font-family:Times;
+            
+            }
+            #ifra{
+                position:relative; top:-250px; left:50px;
+            }
+            #xx{
+                position:relative; top:-20px; left:10px;
+
+            }
+            #xy{
+                position:relative; top:-785px; left:620px;
+            }
+            #xxx{
+                position:relative; top:-785px; left: 620px;
+            }
+            #xxxx{
+                position:relative; top:-575px; left:600px;
+            }
+           
+           
+        </style>
+        <script>
+        var num = window.localStorage.getItem('num') ?  
+parseInt(window.localStorage.getItem('num')) : 
+0; 
+window.onload = putString; 
+function add() { 
+ if(checkBool){
+
+   num += 1; 
+   window.localStorage.setItem('num', num); 
+   putString(); 
+   checkBool = !checkBool;
+ }
+} 
+function mis() { 
+    if(checkBool){
+   num -= 1; 
+   window.localStorage.setItem('num', num); 
+   putString(); 
+   checkBool = !checkBool;
+    }
+} 
+function putString() { 
+   document.getElementById('numberContainer').innerText = num; 
+   
+} </script>
+    </head>
+
+<body>
+    <header>
+            <div id="container">
+
+                    <div id="header">
+                        <span class="style1"><h1><img src="그림1.jpg" width="300" height="70">우재영의 음악저장소</h1>
+                <nav id="Menu">
+                        <ul>
+
+                                <li><a class="active" href="zz.html">Home</a></li>
+                    
+                                <li><a href="http://yjp.ac.kr">TOP 10</a></li>
+                    
+                                <li><a href="zzz.html">장르별 음악</a></li>
+                    
+                                <li><a href="#">About</a></li>
+                    
+                         </ul>
+                         <script>
+                                (function() {
+                                  var cx = '009362380294703406188:vb46odhvytw';
+                                  var gcse = document.createElement('script');
+                                  gcse.type = 'text/javascript';
+                                  gcse.async = true;
+                                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                  var s = document.getElementsByTagName('script')[0];
+                                  s.parentNode.insertBefore(gcse, s);
+                                })();
+                              </script>
+                              <gcse:search></gcse:search>
+                         </span>
+                    </div>
+
+        
+                </nav>
+       <section>
+            <div id="content">
+                    
+           <article>
+               
+                <p>
+                    Today Best Song
+                </p>
+                <iframe width="600" height="400" src="http://www.youtube.com/embed/r6NLMSUtQzg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>></iframe>
+                <P id="xx">1.UNDERTALE Soundtrack - 71 Undertale<br>작곡가 : Tobi Fox<br>나도 추천해요!</P>
+                <div id="numberContainer" style="text-align:center; ;" ></div> 
+<div style="text-align:center;" > 
+<button id="xxxxx" onclick="add()" >좋아요!</button> 
+<button id="xxxxx"onclick="mis()">싫어요!</button> 
+</div> 
+</article>
+<article>
+<h1 id="xy" style="font-size:300%;">그외 순위권</h1>
+<h2 id="xxx">2. 더 라즈 (THE Lads) - Fallin</h2>
+<iframe id="xy" width="500" height="350" src="https://www.youtube.com/embed/n1ddMOquyO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+           </article>
+       </section>
+    </header>
+</body>
+</html>
